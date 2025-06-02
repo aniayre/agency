@@ -9,11 +9,9 @@ header {
     background-color: #28293e;
     width: 100%;
 }
-
 .navbar {
     padding: 5rem 0;
 }
-
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -21,12 +19,9 @@ header {
     color: white;
     font-size: 1.2rem;
 }
-
 .navbar-brand img {
     height: 50px;
-
 }
-
 .nav-link {
     color: white !important;
     margin: 0 3rem;
@@ -35,7 +30,6 @@ header {
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 .nav-link::after {
     content: '';
     position: absolute;
@@ -47,20 +41,15 @@ header {
     background-color: #f46f51;
     transition: width 0.3s ease;
 }
-
 .nav-link:hover {
     color: #f46f51 !important;
 }
-
 .nav-link:hover::after {
     width: 100%;
 }
-
-
 .navbar-toggler {
     color: white;
 }
-
 .contact-btnn {
     background-color: transparent;
     border: 1px solid gray;
@@ -497,7 +486,7 @@ header {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.08);
     z-index: 1;
     position: relative;
-    
+    text-align: justify;
 }
 
 /* Headings and Text */
@@ -568,7 +557,8 @@ p {
     font-size: 12px;
     padding: 10px 14px;
     border-radius: 20px;
-    float: left;
+    display: flex;
+    align-items: flex-start;
 }
 
 /* Responsive Fixes */
@@ -603,7 +593,7 @@ p {
 
 
 .faq-box {
-    width: 500px;
+    width: 100%;
     background-color: white;
     border-radius: 6px;
     overflow: hidden;
