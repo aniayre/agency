@@ -121,8 +121,15 @@ $(document).ready(function () {
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item => {
-  const btn = item.querySelector(".faq-question");
-  btn.addEventListener("click", () => {
-    item.classList.toggle("active");
-  });
+    const btn = item.querySelector(".faq-question");
+    btn.addEventListener("click", () => {
+        item.classList.toggle("active");
+    });
+});
+
+
+// animation
+AOS.init({
+    duration: 1000, // animation duration
+    once: true,     // whether animation should happen only once - while scrolling down
 });
