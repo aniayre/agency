@@ -9,9 +9,11 @@ header {
     background-color: #28293e;
     width: 100%;
 }
+
 .navbar {
     padding: 5rem 0;
 }
+
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -19,9 +21,11 @@ header {
     color: white;
     font-size: 1.2rem;
 }
+
 .navbar-brand img {
     height: 50px;
 }
+
 .nav-link {
     color: white !important;
     margin: 0 3rem;
@@ -30,6 +34,7 @@ header {
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 .nav-link::after {
     content: '';
     position: absolute;
@@ -41,15 +46,19 @@ header {
     background-color: #f46f51;
     transition: width 0.3s ease;
 }
+
 .nav-link:hover {
     color: #f46f51 !important;
 }
+
 .nav-link:hover::after {
     width: 100%;
 }
+
 .navbar-toggler {
     color: white;
 }
+
 .contact-btnn {
     background-color: transparent;
     border: 1px solid gray;
@@ -999,4 +1008,28 @@ footer {
     .image-over-svg img {
         top: -100px;
     }
+}
+
+/* scroll button on the top  */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #f46f51;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    /* square */
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    /* hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+    opacity: 0.8;
 }
